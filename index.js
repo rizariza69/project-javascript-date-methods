@@ -27,8 +27,13 @@ console.log(nowDay);
 const theDate = new Date(2015, 1, 29, 3, 0, 0, 0)
 console.log(theDate); //2015-02-28T20:00:00.000Z
 
-const strDate = new Date('2015-02-28')
+const strDate = new Date('2015-02-28 11:55')
+let hours = strDate.getHours() + ":" + strDate.getMinutes().toString().padStart(2, '0')
 console.log(strDate);
+console.log(hours);
+console.log(strDate + hours);
+
+
 
 
 let time = new Date().getTime()
